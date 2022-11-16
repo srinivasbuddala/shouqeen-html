@@ -67,11 +67,7 @@ p {
 }
 
 .large-font {
-  font-size: 1.2rem;
-}
-
-.bold {
-  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .m-t-1 {
@@ -897,5 +893,59 @@ input.form-control {
   padding: 1rem 0;
 }
 .payment-modes ul li:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+.order-success {
+  padding: 1rem 0;
+  position: relative;
+  padding-left: 6rem;
+}
+.order-success p {
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+}
+.order-success:before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--green);
+}
+.order-success:after {
+  content: "✓";
+  line-height: 3.5rem;
+  color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 1.3rem;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+
+table.table {
+  table-layout: fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+table.table > thead th {
+  padding: 0.8rem;
+  background-color: var(--footerlibg);
+  color: var(--footerbg);
+  font-weight: bold;
+  text-align: left;
+}
+table.table tbody tr td {
+  padding: 0.8rem;
+  color: var(--primary);
   border-bottom: 1px solid var(--border);
 }/*# sourceMappingURL=style.css.map */
