@@ -2,12 +2,15 @@
     --blue: #1e90ff;
     --white: #ffffff;
     --red: #ff0303;
+    --green: #11bc0b;
     --bodybg: #efefef;
     --footerbg: #101010;
     --footerlibg: #d2d2d2;
     --border: #7d7b7b;
     --primary: #222222;
     --secondary: #dcaf3d;
+    --lightbg: #f2f2f2;
+
   }
 
 html, body{ margin: 0; padding: 0;}
@@ -17,8 +20,11 @@ ul{ margin: 0; padding: 0; list-style: none;}
 a{ text-decoration: none; color: var(--btn-primary);
 &:hover{ color: var(--secondary);}
 }
-h2{ font-size: 2.5rem; font-weight: bold;}
+h2{ font-size: 2rem; font-weight: bold;}
+h3{ font-size: 1.6rem; font-weight: bold;}
+hr{width: 100%; height: 1px; color: var(--border); margin: 1.5rem 0; padding: 0;}
 p{ margin: .5rem 0;}
+.large-font{ font-size: 1.2rem;}
 .bold{ font-weight: bold;}
 .m-t-1{ margin-top: 1rem;}
 .m-t-2{ margin-top: 2rem;}
@@ -30,9 +36,16 @@ p{ margin: .5rem 0;}
 .m-y-1{ margin-top: 1rem; margin-bottom: 1rem;}
 .m-y-2{ margin-top: 2rem; margin-bottom: 2rem;}
 .m-y-3{ margin-top: 3rem; margin-bottom: 3rem;}
+.bold{ font-weight: bold;}
+.green{ color: var(--green);}
 main{ margin: 0;}
+.light-bg{ background-color: var(--lightbg); padding: 1rem 0;}
+.address{ font-size: 1.2rem;}
 .pos-rel{ position: relative;}
 .pos-abs{ position: absolute;}
+.full-width{ width: 100%;}
+.text-link{ color: var(--blue);}
+.link-large{ color: var(--blue); font-size: 2rem;}
 header.page-header{ background-color: rgba(16,16,16,.95);}
 .flex-container{ width: 100%;}
 .border-bottom{ border-bottom: 1px solid var(--white);}
@@ -267,8 +280,37 @@ header.page-header{ background-color: rgba(16,16,16,.95);}
 
 .social-media{ i{ font-size: 1.8rem;}}
 input.form-control { padding: 0.6rem 1rem; border-radius: 0.3rem; background-color: var(--white); border: 1px solid var(--border); }
+.checkbox{
+    display: inline-block;
+    position: relative;
+    padding-left: 2.5rem;
+   >input[type='checkbox']{
+    opacity: 0; width: 1.8rem; height: 1.8rem; position: absolute; left: 0; top: 0;
+    &:checked+span:before{content: "\2713"; position: absolute; left: .5rem; top: .3rem; font-size:1.2rem; font-weight: bold;}
+   } 
+   &:before{
+    content:""; position: absolute; left: 0; top: .3rem; width: 1.8rem; height: 1.8rem; border: 1px solid var(--border);
+}
+}
+.radio{
+    display: inline-block;
+    position: relative;
+    padding-left: 2.5rem;
+    input[type='radio']{opacity: 0; width: 1.8rem; height: 1.8rem; position: absolute; left: 0; top: 0;
+    +.radio-desc{
+        &:before{ content: ""; width: 1.8rem; height: 1.8rem; border: 1px solid var(--border); border-radius: 50%; position: absolute; left: 0; top: .3rem;}
+        &:after{ content: ""; width: 1.4rem; height: 1.4rem; background-color: transparent; border-radius: 50%; position: absolute; left: .2rem; top: .5rem;}
+    }
+    &:checked{
+        +.radio-desc{
+            &:after{ background-color: var(--green);}
+        }
+    }
+    }
+   
+}
 .btn{ 
-    border-radius: .5rem; background-color: var(--primary); padding: .5rem 1rem; color: var(--white); transition: .5s ease all; box-shadow: 0 0 0 0 rgba(0,0,0,.4); display: inline-block;
+    border-radius: .5rem; background-color: var(--primary); padding: .5rem 1rem; color: var(--white); transition: .5s ease all; box-shadow: 0 0 0 0 rgba(0,0,0,.4); display: inline-block; border: none;
   &.btn-secondary{ background-color: #dcaf3d;}
   &:hover{ box-shadow: 2px 3px 0 1px rgba(0,0,0,.2); color: var(--white);}
   &.btn-border{
@@ -489,5 +531,29 @@ input.form-control { padding: 0.6rem 1rem; border-radius: 0.3rem; background-col
      .offer-price{ font-size: 2.3rem; font-weight: bold; display: inline-block; margin-right: 1rem;}
      .actual-price{ font-size: 1.4rem; text-decoration:line-through; font-weight: 600; margin-right: 1rem;}
     }
+    }
+}
+.hilight-section{ background-color: #fbeec9; padding: 1rem 0; font-size: 1.5rem; color: var(--primary);
+ a{ color: var(--blue);
+    &:hover{ color: var(--secondary);}
+}
+}
+.white-block{
+     background-color: var(--white);
+     padding: 1rem 2rem;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,.2);
+    >header{
+        padding-top: .5rem; padding-bottom: .5rem;
+        border-bottom: 1px solid var(--border);
+    }
+}
+.order-summary{
+    .light-bg{ margin-left: -2rem; margin-right: -2rem; padding-left: 2rem; padding-right: 2rem}
+}
+.payment-modes{
+    ul{
+        li{ padding: 1rem 0;
+        &:not(:last-child){ border-bottom: 1px solid var(--border);}
+        }
     }
 }
