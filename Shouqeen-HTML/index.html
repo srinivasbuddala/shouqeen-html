@@ -17,8 +17,9 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/css/reset.css?v=1.0">
   <link rel="stylesheet" href="assets/css/grid.css?v=1.0">
-  <link rel="stylesheet" href="assets/css/style.css?v=1.0">
   <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/flags.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
       <div class="border-bottom">
       <div class="container">
         <div class="row align-v-center">
-           <div class="col-md-4 m-y-1">
+           <div class="col-md-3 m-y-1">
               <div class="flexbox align-v-center">
                 <a href="javascript:void(0)"><img src="assets/images/shouqeen-logo.png" alt="Shouqeen" width="40" ></a>
                 <div class="logo-title">
@@ -68,9 +69,18 @@
               </ul>
             </div>
            </div>
-           <div class="col-md-2 m-y-1">
+           <div class="col-md-3 m-y-1">
             <div class="right-menu t-right">
               <ul>
+                <li>
+                  <select id="select-currency">
+                    <option value="0" data-imagesrc="assets/images/indian-flag-icon.png"
+                        data-description="">INR</option>
+                    <option value="1" data-imagesrc="assets/images/us-flag-icon.png"
+                        data-description="">US Dollar</option>
+                   
+                </select>
+                </li>
                 <li class="pos-rel"><a href="javascript:void(0)"><i class="fa-solid fa-cart-plus"></i></a><span class="badge red abspos">1</span></li>
                 <li class="pos-rel m-l-1">
                   <div class="user-menu"> <a href="javascript:void(0)"><i class="fa-solid fa-user"></i> <i class="fa-solid fa-chevron-down small"></i></a>
@@ -242,37 +252,71 @@
     </div>
    </nav>
     </header>
-    <section class="menu-list sec-pad">
-      <div class="container m-b-2">
-        <h2 class="section-heading">Menu List</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="menu-list-block">
-              <img src="assets/images/backery.jpg" alt="backery">
-              <a href="#" class="item-link">Backery Food <span><i class="fa-solid fa-arrow-right"></i></span></a>
-            </div>            
-          </div>
-          <div class="col-md-4">
-            <div class="menu-list-block">
-              <img src="assets/images/cababs.jpg" alt="backery">
-              <a href="#" class="item-link">kebabs Food <span><i class="fa-solid fa-arrow-right"></i></span></a>
+    <section class="newreleased-block sec-pad">
+      <div class="container ">
+        <h2 class="section-heading  t-center">New Released Food <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>Lorem Ipsum is simply dummy text of the printing</small></h2>
+          <div class="row m-t-3 m-b-2">
+             <div class="col-md-3">
+               <div class="newreleased-item">
+                <a href="#">
+                <div class="img-block">
+                  <img src="assets/images/rice_pulao.jpg" alt="" width="100%">
+                </div>
+                <div class="item-desc">
+                  <h3>Rice Pulao</h3>
+                  <p>Lunch Items</p>
+                </div>
+              </a>
+               </div>
+             </div>
+             <div class="col-md-3">
+              <div class="newreleased-item">
+                <a href="#">
+               <div class="img-block">
+                 <img src="assets/images/sandwich.jpg" alt="" width="100%">
+               </div>
+               <div class="item-desc">
+                 <h3>Bread Sandwich</h3>
+                 <p>Lunch Items</p>
+               </div>
+               </a>
+              </div>
             </div>
-            
-          </div>
-          <div class="col-md-4">
-            <div class="menu-list-block">
-              <img src="assets/images/biryani.jpg" alt="backery">
-              <a href="#" class="item-link">Biryani Combo Food <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            <div class="col-md-3">
+              <div class="newreleased-item">
+                <a href="#">
+               <div class="img-block">
+                 <img src="assets/images/chicken-salad.jpg" alt="" width="100%">
+               </div>
+               <div class="item-desc">
+                 <h3>Chicken Salad</h3>
+                 <p>Lunch Items</p>
+               </div>
+              </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="newreleased-item">
+                <a href="#">
+               <div class="img-block">
+                 <img src="assets/images/Desserts.jpg" alt="" width="100%">
+               </div>
+               <div class="item-desc">
+                 <h3>Desserts</h3>
+                 <p>Snack Items</p>
+               </div>
+              </a>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
+   
 
     <section class="featured-categories sec-pad">
       <div class="container">
           <h2 class="section-heading t-center">Featured Categories <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>Lorem Ipsum is simply dummy text of the printing</small></h2>
-          <div class="cat-list owl-carousel t-center m-t-2">
+          <div class="cat-list owl-carousel t-center m-t-3">
             <a href="#all-cat" class="active">All</a> 
             <a href="#sweets-cat" >Sweets</a> 
             <a href="#chicken-biryani-cat" >Chiken Biryani</a> 
@@ -566,65 +610,35 @@
         </div>
     </section>
 
-    <section class="newreleased-block sec-pad">
-      <div class="container ">
-        <h2 class="section-heading  t-center">New Released Food <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>Lorem Ipsum is simply dummy text of the printing</small></h2>
-          <div class="row m-t-2 m-b-2">
-             <div class="col-md-3">
-               <div class="newreleased-item">
-                <a href="#">
-                <div class="img-block">
-                  <img src="assets/images/rice_pulao.jpg" alt="" width="100%">
-                </div>
-                <div class="item-desc">
-                  <h3>Rice Pulao</h3>
-                  <p>Lunch Items</p>
-                </div>
-              </a>
-               </div>
-             </div>
-             <div class="col-md-3">
-              <div class="newreleased-item">
-                <a href="#">
-               <div class="img-block">
-                 <img src="assets/images/sandwich.jpg" alt="" width="100%">
-               </div>
-               <div class="item-desc">
-                 <h3>Bread Sandwich</h3>
-                 <p>Lunch Items</p>
-               </div>
-               </a>
-              </div>
+    <section class="menu-list sec-pad">
+      <div class="container m-b-2">
+        <h2 class="section-heading">Menu List</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="menu-list-block">
+              <img src="assets/images/backery.jpg" alt="backery">
+              <a href="#" class="item-link">Backery Food <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>            
+          </div>
+          <div class="col-md-4">
+            <div class="menu-list-block">
+              <img src="assets/images/cababs.jpg" alt="backery">
+              <a href="#" class="item-link">kebabs Food <span><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
-            <div class="col-md-3">
-              <div class="newreleased-item">
-                <a href="#">
-               <div class="img-block">
-                 <img src="assets/images/chicken-salad.jpg" alt="" width="100%">
-               </div>
-               <div class="item-desc">
-                 <h3>Chicken Salad</h3>
-                 <p>Lunch Items</p>
-               </div>
-              </a>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="newreleased-item">
-                <a href="#">
-               <div class="img-block">
-                 <img src="assets/images/Desserts.jpg" alt="" width="100%">
-               </div>
-               <div class="item-desc">
-                 <h3>Desserts</h3>
-                 <p>Snack Items</p>
-               </div>
-              </a>
-              </div>
+            
+          </div>
+          <div class="col-md-4">
+            <div class="menu-list-block">
+              <img src="assets/images/biryani.jpg" alt="backery">
+              <a href="#" class="item-link">Biryani Combo Food <span><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
           </div>
+        </div>
       </div>
     </section>
+
+
+
     <section class="testimonials-block ">
       <div class="container">
         <div class="testimonials owl-carousel">
@@ -732,6 +746,7 @@
     </footer>
   </main>
   <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/ddslick.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
     $(document).ready(function(){
@@ -777,6 +792,7 @@ $('.cat-list').owlCarousel({
         }
     }
 });
+
     });
   </script>
 </body>

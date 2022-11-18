@@ -6,9 +6,12 @@ $(document).ready(function(){
         $('.category-list').removeClass('active');
     });
     $('.user-menu > a').on('click', function(){
-        $(this).siblings('.user-menu-list').fadeToggle();
+        $('.user-menu-list').fadeToggle();
     })
-    $('..user-menu-list  a').on('click', function(){
+    $('.user-menu-list  a').on('click', function(){
         $('.user-menu-list').hide();
-    })
+    });
+    
+    $('#select-currency').ddslick();
 });
+

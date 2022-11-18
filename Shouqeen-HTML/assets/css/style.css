@@ -6,8 +6,8 @@
   --green: #11bc0b;
   --bodybg: #efefef;
   --footerbg: #101010;
-  --footerlibg: #d2d2d2;
-  --border: #7d7b7b;
+  --footerlibg: #eaeaea;
+  --border: #ccc;
   --primary: #173b16;
   --secondary: #dcaf3d;
   --lightbg: #f2f2f2;
@@ -27,7 +27,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   color: #333;
-  background-color: var(--bodybg);
+  background-color: var(--white);
 }
 
 ul {
@@ -76,6 +76,14 @@ p {
 
 .m-t-1 {
   margin-top: 0.5rem;
+}
+
+.m-t-2 {
+  margin-top: 1rem;
+}
+
+.m-t-3 {
+  margin-top: 1.5rem;
 }
 
 .m-t-2 {
@@ -131,7 +139,7 @@ main {
 }
 
 .logo-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin-left: 1rem;
   font-family: "Roboto Condensed";
@@ -242,7 +250,7 @@ header.page-header {
 }
 .right-menu > ul > li > a {
   color: var(--footerbg);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .category-menu {
@@ -1109,7 +1117,7 @@ table.table tbody tr td {
 }
 
 .user-menu i:not(.small) {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .user-menu .user-menu-list {
   position: absolute;
@@ -1150,4 +1158,59 @@ table.table tbody tr td {
   display: block;
   padding: 0.5rem 0;
   border-bottom: 1px solid var(--lightbg);
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 767px) {
+  .category-menu > ul {
+    flex-direction: column;
+  }
+  .category-menu > ul > li .submenu {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .category-search .selectedcat {
+    width: 50%;
+  }
+  .category-search input[type=text] {
+    width: 50%;
+  }
+  .newreleased-item, .menu-list-block {
+    margin-bottom: 1rem;
+  }
+  .would-like-block .img-block {
+    height: auto;
+  }
+  .footer-links [class*=col] {
+    margin: 1rem 0;
+  }
+  .sec-pad {
+    padding: 1rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */
