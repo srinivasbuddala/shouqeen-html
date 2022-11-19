@@ -144,6 +144,18 @@ main {
   margin-left: 1rem;
   font-family: "Roboto Condensed";
   color: var(--secondary);
+  position: relative;
+}
+.logo-title small {
+  font-size: 1.2rem;
+  color: var(--primary);
+  display: block;
+  text-align: center;
+  line-height: 0.7rem;
+  background: #fff;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 3;
 }
 
 .light-bg {

@@ -41,7 +41,11 @@ p{ margin: .5rem 0;}
 .bold{ font-weight: bold;}
 .green{ color: var(--green);}
 main{ margin: 0;}
-.logo-title{ font-size: 2.5rem; text-transform: uppercase; margin-left: 1rem; font-family: 'Roboto Condensed'; color: var(--secondary);}
+.logo-title{ 
+    font-size: 2.5rem; text-transform: uppercase; margin-left: 1rem; font-family: 'Roboto Condensed'; color: var(--secondary); position: relative;
+   
+    small{ font-size: 1.2rem; color: var(--primary); display: block; text-align: center; line-height: .7rem; background: #fff; text-transform: capitalize; position: relative; z-index: 3;}
+}
 .light-bg{ background-color: var(--lightbg); }
 .address{ font-size: 1.2rem;}
 .pos-rel{ position: relative;}
