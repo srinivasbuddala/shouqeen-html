@@ -72,7 +72,7 @@ p {
 }
 
 .large-font {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .m-t-1 {
@@ -129,6 +129,10 @@ p {
 
 .bold {
   font-weight: bold;
+}
+
+.p-t-1 {
+  padding-top: 0.5rem;
 }
 
 .p-r-0 {
@@ -1006,20 +1010,22 @@ input.form-control {
 
 .white-block {
   background-color: var(--white);
-  padding: 1rem 2rem;
+  padding: 1rem;
   box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.2);
 }
-.white-block > header {
+.white-block header {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
 }
 
 .order-summary .light-bg {
-  margin-left: -2rem;
-  margin-right: -2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .payment-modes ul li {
@@ -1244,4 +1250,72 @@ table.table tbody tr td {
   .sec-pad {
     padding: 1rem 0;
   }
+}
+.profile_img {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.profile_info {
+  font-family: "Roboto Condensed";
+  font-size: 1.2rem;
+}
+.profile_info strong {
+  font-size: 1.5rem;
+}
+
+.account-menu > li > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Roboto Condensed";
+  margin-bottom: 1rem;
+}
+.account-menu > li > header span {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.account-menu > li > header .fa-chevron-right {
+  margin-left: auto;
+}
+.account-menu > li:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.account-menu > li .menu-list > li {
+  display: block;
+  margin-left: 3rem;
+  margin-bottom: 0.6rem;
+}
+
+.form-block {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.form-block > label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.form-block input[type=text] {
+  width: 100%;
+}
+
+.orders-list .order-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+.orders-list .order-item .img-block {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 1rem;
 }/*# sourceMappingURL=style.css.map */
