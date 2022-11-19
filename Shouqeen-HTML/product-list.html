@@ -20,10 +20,11 @@
   <link rel="stylesheet" href="assets/css/style.css?v=1.0">
   <link rel="stylesheet" href="assets/css/owl.carousel.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/fc9153c088.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc9153c088.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -31,12 +32,18 @@
     <header class="page-header">
       <div class="border-bottom">
       <div class="container">
-        <div class="row align-v-bottom">
-           <div class="col-md-3">
-              <a href="javascript:void(0)"><img src="assets/images/shouqeen.png" alt="Shouqeen" width="200"></a>
+        <div class="row align-v-center">
+           <div class="col-md-3 m-y-1">
+              <div class="flexbox align-v-center">
+                <a href="javascript:void(0)"><img src="assets/images/shouqeen-logo.png" alt="Shouqeen" width="40" ></a>
+                <div class="logo-title">
+                  Shouqeen
+                  <small>Sirf biryani</small>
+                </div>
+              </div>
            </div>
-           <div class="col-md-6">
-            <div class="main-menu">
+           <div class="col-md-6 m-y-1">
+            <!-- <div class="main-menu">
               <ul>
                 <li><a href="javascript:void(0)">Home</a>
                   <div class="sumenu"></div>
@@ -48,23 +55,56 @@
                   <div class="sumenu"></div>
                 </li>
               </ul>
+            </div> -->
+            <div class="category-search align-v-center">
+              <div class="selectedcat"><i class="fa-solid fa-bars"></i> <span id="selectedcat">Shop by Category</span></div>
+              <input type="text" name="search" id="search_product"  placeholder="search based on keyword"/>
+              <ul class="category-list">
+                <li><a href="#">Pharmacy</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Grocery</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Electronics</a></li>
+              </ul>
             </div>
            </div>
-           <div class="col-md-3">
+           <div class="col-md-3 m-y-1">
             <div class="right-menu t-right">
               <ul>
-                <li><a href="javascript:void(0)"><i class="fa-solid fa-user"></i></a></li>
-                <li class="pos-rel"><a href="javascript:void(0)"><i class="fas fa-concierge-bell"></i></a><span class="badge red abspos">1</span></li>
+                <li>
+                  <select id="select-currency">
+                    <option value="0" data-imagesrc="assets/images/indian-flag-icon.png"
+                        data-description="">INR</option>
+                    <option value="1" data-imagesrc="assets/images/us-flag-icon.png"
+                        data-description="">US Dollar</option>
+                   
+                </select>
+                </li>
+                <li class="pos-rel"><a href="javascript:void(0)"><i class="fa-solid fa-cart-plus"></i></a><span class="badge red abspos">1</span></li>
+                <li class="pos-rel m-l-1">
+                  <div class="user-menu"> <a href="javascript:void(0)"><i class="fa-solid fa-user"></i> <i class="fa-solid fa-chevron-down small"></i></a>
+                    <div class="user-menu-list">
+                      <ul>
+                        <li><a href="#">Profile Info</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                      </ul>
+                    </div>
+                  </div>   
+                </li>
               </ul>
           </div>
            </div>
         </div>  
       </div>
     </div>
+   <nav class="menu-bar">
     <div class="container">
       <div class="category-menu">
         <ul>
-          <li><a href="javascript:void(0)">Soft drinks and Bottle water</a>
+          <li><a href="javascript:void(0)">Soft drinks and Bottle water <i class="fa-solid fa-chevron-down"></i></a>
                <div class="submenu">
                   <h3>Soft drinks and bottle water</h3>
                   <ul>
@@ -101,7 +141,7 @@
                   </ul>
                </div>
           </li>
-          <li><a href="javascript:void(0)">Sweets</a>
+          <li><a href="javascript:void(0)">Sweets <i class="fa-solid fa-chevron-down"></i></a>
             <div class="submenu">
               <h3>Sweets</h3>
               <ul>
@@ -138,7 +178,7 @@
               </ul>
            </div>
           </li>
-          <li><a href="javascript:void(0)">Chicken Biryani</a>
+          <li><a href="javascript:void(0)">Chicken Biryani <i class="fa-solid fa-chevron-down"></i></a>
             <div class="submenu">
               <h3>Chicken Biryani</h3>
               <ul>
@@ -175,7 +215,7 @@
               </ul>
            </div>
           </li>
-          <li><a href="javascript:void(0)"> Mutton Biryani</a>
+          <li><a href="javascript:void(0)"> Mutton Biryani <i class="fa-solid fa-chevron-down"></i></a>
             <div class="submenu">
               <h3>Mutton Biryani</h3>
               <ul>
@@ -210,6 +250,7 @@
         </ul>
       </div>
     </div>
+   </nav>
     </header>
     <section class="filter-block">
       <div class="container">
@@ -277,188 +318,364 @@
          <div class="items-list-container">
             <div class="list-item">
               <div class="row">
-                 <div class="col-md-3">
+                 <div class="col-md-3 p-r-0">
                   <div class="img-block">
                     <img src="assets/images/biryani.jpg">
                   </div>
                  </div>
-                 <div class="col-md-6">
-                   <h2>Chicken Premium Biryani</h2>
-                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
-                   <div class="order-time">Get Your Order in 20 mins</div>
-                   <div class="price-list">
-                      <span class="offer-price">$30.00</span>
-                      <span class="actual-price">$40.00 </span>
-                      <span class="save-price">you can Save $10</span>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
                    </div>
                  </div>
-                 <div class="col-md-3 t-right cart-sec">
-                  <div class="m-b-1"><span class="stars star4"></span></div>
-                  <div class="m-t-2">
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
-                  </div>
-                  <div class="m-t-2 flex update-items">
-                    <button class="btn btn-secondary">-</button>
-                    <span>0</span>
-                    <button class="btn btn-secondary">+</button>
-                  </div>
-                 </div>
+                
               </div>
             </div>
+           
             <div class="list-item">
               <div class="row">
-                 <div class="col-md-3">
+                 <div class="col-md-3 p-r-0">
                   <div class="img-block">
                     <img src="assets/images/biryani.jpg">
                   </div>
                  </div>
-                 <div class="col-md-6">
-                   <h2>Chicken Premium Biryani</h2>
-                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
-                   <div class="order-time">Get Your Order in 20 mins</div>
-                   <div class="price-list">
-                      <span class="offer-price">$30.00</span>
-                      <span class="actual-price">$40.00 </span>
-                      <span class="save-price">you can Save $10</span>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
                    </div>
                  </div>
-                 <div class="col-md-3 t-right cart-sec">
-                  <div class="m-b-1"><span class="stars star4"></span></div>
-                  <div class="m-t-2">
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
-                  </div>
-                  <div class="m-t-2 flex update-items">
-                    <button class="btn btn-secondary">-</button>
-                    <span>0</span>
-                    <button class="btn btn-secondary">+</button>
-                  </div>
-                 </div>
+                
               </div>
             </div>
 
             <div class="list-item">
               <div class="row">
-                 <div class="col-md-3">
+                 <div class="col-md-3 p-r-0">
                   <div class="img-block">
                     <img src="assets/images/biryani.jpg">
                   </div>
                  </div>
-                 <div class="col-md-6">
-                   <h2>Chicken Premium Biryani</h2>
-                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
-                   <div class="order-time">Get Your Order in 20 mins</div>
-                   <div class="price-list">
-                      <span class="offer-price">$30.00</span>
-                      <span class="actual-price">$40.00 </span>
-                      <span class="save-price">you can Save $10</span>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
                    </div>
                  </div>
-                 <div class="col-md-3 t-right cart-sec">
-                  <div class="m-b-1"><span class="stars star4"></span></div>
-                  <div class="m-t-2">
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
-                  </div>
-                  <div class="m-t-2 flex update-items">
-                    <button class="btn btn-secondary">-</button>
-                    <span>0</span>
-                    <button class="btn btn-secondary">+</button>
-                  </div>
-                 </div>
+                
               </div>
             </div>
 
             <div class="list-item">
               <div class="row">
-                 <div class="col-md-3">
+                 <div class="col-md-3 p-r-0">
                   <div class="img-block">
                     <img src="assets/images/biryani.jpg">
                   </div>
                  </div>
-                 <div class="col-md-6">
-                   <h2>Chicken Premium Biryani</h2>
-                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
-                   <div class="order-time">Get Your Order in 20 mins</div>
-                   <div class="price-list">
-                      <span class="offer-price">$30.00</span>
-                      <span class="actual-price">$40.00 </span>
-                      <span class="save-price">you can Save $10</span>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
                    </div>
                  </div>
-                 <div class="col-md-3 t-right cart-sec">
-                  <div class="m-b-1"><span class="stars star4"></span></div>
-                  <div class="m-t-2">
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
-                  </div>
-                  <div class="m-t-2 flex update-items">
-                    <button class="btn btn-secondary">-</button>
-                    <span>0</span>
-                    <button class="btn btn-secondary">+</button>
-                  </div>
-                 </div>
+                
               </div>
             </div>
 
             <div class="list-item">
               <div class="row">
-                 <div class="col-md-3">
+                 <div class="col-md-3 p-r-0">
                   <div class="img-block">
                     <img src="assets/images/biryani.jpg">
                   </div>
                  </div>
-                 <div class="col-md-6">
-                   <h2>Chicken Premium Biryani</h2>
-                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
-                   <div class="order-time">Get Your Order in 20 mins</div>
-                   <div class="price-list">
-                      <span class="offer-price">$30.00</span>
-                      <span class="actual-price">$40.00 </span>
-                      <span class="save-price">you can Save $10</span>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
                    </div>
                  </div>
-                 <div class="col-md-3 t-right cart-sec">
-                  <div class="m-b-1"><span class="stars star4"></span></div>
-                  <div class="m-t-2">
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
-                  </div>
-                  <div class="m-t-2 flex update-items">
-                    <button class="btn btn-secondary">-</button>
-                    <span>0</span>
-                    <button class="btn btn-secondary">+</button>
-                  </div>
-                 </div>
+                
               </div>
             </div>
 
             <div class="list-item">
               <div class="row">
-                 <div class="col-md-3">
+                 <div class="col-md-3 p-r-0">
                   <div class="img-block">
                     <img src="assets/images/biryani.jpg">
                   </div>
                  </div>
-                 <div class="col-md-6">
-                   <h2>Chicken Premium Biryani</h2>
-                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
-                   <div class="order-time">Get Your Order in 20 mins</div>
-                   <div class="price-list">
-                      <span class="offer-price">$30.00</span>
-                      <span class="actual-price">$40.00 </span>
-                      <span class="save-price">you can Save $10</span>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
                    </div>
                  </div>
-                 <div class="col-md-3 t-right cart-sec">
-                  <div class="m-b-1"><span class="stars star4"></span></div>
-                  <div class="m-t-2">
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
-                  </div>
-                  <div class="m-t-2 flex update-items">
-                    <button class="btn btn-secondary">-</button>
-                    <span>0</span>
-                    <button class="btn btn-secondary">+</button>
-                  </div>
-                 </div>
+                
               </div>
             </div>
+
+            <div class="list-item">
+              <div class="row">
+                 <div class="col-md-3 p-r-0">
+                  <div class="img-block">
+                    <img src="assets/images/biryani.jpg">
+                  </div>
+                 </div>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
+                   </div>
+                 </div>
+                
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="row">
+                 <div class="col-md-3 p-r-0">
+                  <div class="img-block">
+                    <img src="assets/images/biryani.jpg">
+                  </div>
+                 </div>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
+                   </div>
+                 </div>
+                
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="row">
+                 <div class="col-md-3 p-r-0">
+                  <div class="img-block">
+                    <img src="assets/images/biryani.jpg">
+                  </div>
+                 </div>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
+                   </div>
+                 </div>
+                
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="row">
+                 <div class="col-md-3 p-r-0">
+                  <div class="img-block">
+                    <img src="assets/images/biryani.jpg">
+                  </div>
+                 </div>
+                 <div class="col-md-9 list-item-content">
+                   <div class="row align-v-center">
+                    <div class="col-md-9">
+                      <h2><a href="#">Chicken Premium Biryani</a></h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text</p>
+                      <div class="order-time">Get Your Order in 20 mins</div>
+                      <div class="price-list">
+                         <span class="offer-price">$30.00</span>
+                         <span class="actual-price">$40.00 </span>
+                         <span class="save-price">you can Save $10</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 t-right cart-sec">
+                     <div class="m-b-1"><span class="stars star4"></span></div>
+                     <div class="m-t-2">
+                       <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                     </div>
+                     <div class="m-t-2 flex update-items">
+                       <button class="btn btn-secondary">-</button>
+                       <span>0</span>
+                       <button class="btn btn-secondary">+</button>
+                     </div>
+                    </div>
+                   </div>
+                 </div>
+                
+              </div>
+            </div>  
+
          </div>
       </div>
     </section>
@@ -585,6 +802,8 @@
     </footer>
   </main>
   <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/ddslick.js"></script>
+  <script src="assets/js/custom.js"></script>
   <script>
     $(document).ready(function(){
       $('.filter-btn').on('click', function(){
