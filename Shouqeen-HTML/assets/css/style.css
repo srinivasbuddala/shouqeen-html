@@ -103,6 +103,10 @@ p {
   margin-left: 0.5rem;
 }
 
+.m-l-2 {
+  margin-left: 1rem;
+}
+
 .m-r-1 {
   margin-right: 0.5rem;
 }
@@ -610,6 +614,14 @@ input.form-control {
 }
 .btn.white-btn:hover {
   background-color: var(--secondary);
+}
+.btn.filter-btn {
+  border: 1px solid var(--secondary);
+}
+.btn.filter-btn:hover {
+  box-shadow: none;
+  background-color: var(--white);
+  color: var(--primary);
 }
 .btn.btn-large {
   padding: 0.8rem 2rem 0.8rem 2.5rem;
@@ -1310,4 +1322,21 @@ table.table tbody tr td {
   height: 120px;
   overflow: hidden;
   border-radius: 1rem;
+}
+
+.hilight-block {
+  background-color: var(--cardhover);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid var(--secondary);
+}
+.hilight-block .welcome-note {
+  font-size: 1.4rem;
+  font-family: "Roboto Condensed";
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.hilight-block .welcome-note b {
+  color: var(--secondary);
 }/*# sourceMappingURL=style.css.map */

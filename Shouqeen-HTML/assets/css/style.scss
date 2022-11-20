@@ -34,6 +34,7 @@ p{ margin: .5rem 0;}
 .m-b-1{ margin-bottom: .5rem;}
 .m-b-2{ margin-bottom: 1rem;}
 .m-l-1{ margin-left: .5rem;}
+.m-l-2{ margin-left: 1rem;}
 .m-r-1{ margin-right: .5rem;}
 .m-x-1{ margin-left: .5rem; margin-right: .5rem;}
 .m-y-1{ margin-top: .5rem; margin-bottom: .5rem;}
@@ -332,6 +333,14 @@ input.form-control { padding: 0.6rem 1rem; border-radius: 0.3rem; background-col
     background-color: var(--white); color: var(--footerbg); font-size: 1.4rem; font-weight: bold;
     &:hover{
         background-color: var(--secondary);
+    }
+  }
+  &.filter-btn{
+    border: 1px solid var(--secondary);
+    &:hover{
+        box-shadow: none;
+        background-color: var(--white);
+        color: var(--primary);
     }
   }
   &.btn-large{  padding: .8rem 2rem .8rem 2.5rem;
@@ -862,5 +871,14 @@ table.table {
         border-bottom: 1px solid var(--border);
         padding-bottom: 1rem;
         .img-block{ width: 100%; height: 120px; overflow: hidden; border-radius: 1rem;}
+    }
+}
+.hilight-block{ background-color: var(--cardhover); padding: .5rem 1rem; border-radius: .5rem; margin: 1rem 0; border: 1px solid var(--secondary);
+    .welcome-note {
+        font-size: 1.4rem;
+        font-family: 'Roboto Condensed';
+        b{color: var(--secondary);}
+        display: block;
+        margin-bottom: .3rem;
     }
 }
