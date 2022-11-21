@@ -1339,4 +1339,36 @@ table.table tbody tr td {
 }
 .hilight-block .welcome-note b {
   color: var(--secondary);
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+  .logo-title {
+    font-size: 1.6rem;
+  }
+  .page-header row {
+    justify-content: space-between;
+  }
+  .page-header .row {
+    justify-content: space-between;
+  }
+  .page-header .row .col-md-3 {
+    width: auto;
+    order: 1;
+    padding-right: 0;
+  }
+  .page-header .row .col-md-6 {
+    order: 2;
+  }
+  .right-menu > ul > li {
+    padding: 0 0.2rem;
+  }
+  #select-currency-dd-placeholder {
+    width: 110px !important;
+  }
+  #select-currency-dd-placeholder .dd-select {
+    width: 110px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

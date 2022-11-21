@@ -882,3 +882,20 @@ table.table {
         margin-bottom: .3rem;
     }
 }
+
+@media screen and (max-width: 767px){
+    html{ font-size: 12px;}
+    .logo-title{ font-size: 1.6rem;}
+    .page-header row{ justify-content: space-between;}
+    .page-header {
+        .row{
+            justify-content: space-between;
+            .col-md-3 {  width: auto;  order: 1; padding-right: 0; }
+            .col-md-6 {  order: 2; }
+        }
+    }
+    .right-menu > ul > li{padding: 0 0.2rem;}
+    #select-currency-dd-placeholder{ width: 110px!important;
+        .dd-select{ width: 110px!important;}
+    }
+}
