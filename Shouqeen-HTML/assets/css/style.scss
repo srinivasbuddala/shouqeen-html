@@ -589,7 +589,7 @@ input.form-control { padding: 0.6rem 1rem; border-radius: 0.3rem; background-col
         font-size: 1.7rem; font-weight: bold; 
     }
     .order-time{ font-weight: bold; margin-top: .5rem;}
-    .price-list{ margin-top: .4rem; 
+    .price-list{ margin-top: 1rem; 
      .offer-price{ font-size: 1.6rem; font-weight: bold; display: inline-block; margin-right: 1rem; color: var(--blue);}
      .actual-price{ font-size: 1.2rem; text-decoration:line-through; font-weight: 600; margin-right: 1rem; color: var(--red);}
     }
@@ -870,7 +870,17 @@ table.table {
         margin-bottom: 1rem;
         border-bottom: 1px solid var(--border);
         padding-bottom: 1rem;
-        .img-block{ width: 100%; height: 120px; overflow: hidden; border-radius: 1rem;}
+        .img-block{ width: 100%; height: 120px; overflow: hidden; border-radius: 1rem;
+         img{ min-width: 100%; height: 100%;
+        }
+        }
+        .des-details{ line-height: 1.5;
+            .order-time{ font-weight: bold; margin-top: .5rem;}
+        .price-list{  margin-top: .5rem;
+         .offer-price{ font-size: 1.2rem; font-weight: bold; display: inline-block; margin-right: 1rem; color: var(--blue);}
+         .actual-price{text-decoration:line-through; font-weight: 600; margin-right: 1rem; color: var(--red);}
+        }
+        }
     }
 }
 .hilight-block{ background-color: var(--cardhover); padding: .5rem 1rem; border-radius: .5rem; margin: 1rem 0; border: 1px solid var(--secondary);
@@ -881,6 +891,63 @@ table.table {
         display: block;
         margin-bottom: .3rem;
     }
+}
+.Quantity-value{
+    .value-button {
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #ddd;
+        margin: 0px;
+        width: 3rem;
+        font-size: 2rem;
+        vertical-align: top;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+        background: #eee;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      .value-button:hover {
+        cursor: pointer;
+      }
+      
+       #decrease {
+        margin-right: -4px;
+        border-radius: 8px 0 0 8px;
+      }
+      
+      #increase {
+        margin-left: -4px;
+        border-radius: 0 8px 8px 0;
+      }
+      
+       #input-wrap {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      input#number {
+        text-align: center;
+        border: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin: 0px;
+        width: 3rem;
+        height: 3.15rem;
+        vertical-align: top;
+      }
+      
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
 }
 
 @media screen and (max-width: 767px){
