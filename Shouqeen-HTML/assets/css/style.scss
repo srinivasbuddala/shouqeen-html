@@ -617,6 +617,7 @@ input.form-control { padding: 0.6rem 1rem; border-radius: 0.3rem; background-col
         span{ font-size: .7rem;}
     }
     .des-details{ line-height: 1.5;
+        h3{ margin-bottom: 1.5rem;}
         .order-time{ font-weight: bold; font-size: 1.3rem; margin-top: 1rem;}
     .price-list{ 
      .offer-price{ font-size: 1.8rem; font-weight: bold; display: inline-block; margin-right: 1rem; color: var(--blue);}
@@ -948,6 +949,68 @@ table.table {
           -webkit-appearance: none;
           margin: 0;
       }
+}
+
+.customize-list{
+    h5{ display: inline-block; margin: 0}
+    label{ font-size: .8rem; margin:0 0 .25rem .25rem; display: inline-block; border: 1px solid var(--border); background-color: var(--white); border-radius: 2rem; padding: .5rem 2.5rem .5rem .5rem; position: relative;
+     >a{
+        display: inline-block; background-color: var(--footerlibg); border-radius: 50%; position: absolute; right:.25rem; padding:.25rem .5rem; top:.25rem
+     }
+    }
+}
+.desc-sidebar{
+    @media screen  and (min-width: 1024px){
+        width: 300px;
+        max-height: 500px; 
+        overflow: auto;
+    }
+    h4{ margin-bottom: .5rem; }
+    .desc-sidebarblock{
+        margin-bottom: 2rem;
+        >ul{
+            >li{
+                margin-bottom: .75rem;
+                .checkbox{
+                    &:before{
+                        width: 1.5rem; height: 1.5rem;
+                    }
+                    input[type=checkbox]:checked + span:before{    left: 0.3rem; top: 0.25rem;}
+                    font-size: .9rem;
+                    span{ display: inline-block; vertical-align: middle; padding-top: .4rem;}
+                }
+            }
+        }
+    }
+}
+.fixadent{
+    position: sticky; top: 5px; position: -webkit-sticky;
+}
+.tabs-container{
+    .tabs-list{
+        display: flex;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 1.5rem;
+        >li{
+            display: inline-block;
+            position: relative;
+            >a{
+                position: relative;
+                z-index: 2;
+                top: 2px;
+                display: inline-block;
+                padding: 1rem 2rem;
+                border:1px solid transparent;
+                border-radius: .5rem .5rem 0 0;
+                border-bottom: none;
+               
+                &.active{
+                    border-color: var(--border);
+                    background-color: var(--white);
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px){

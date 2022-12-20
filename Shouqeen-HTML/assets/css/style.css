@@ -980,6 +980,9 @@ input.form-control {
 .items-detail-container .des-details {
   line-height: 1.5;
 }
+.items-detail-container .des-details h3 {
+  margin-bottom: 1.5rem;
+}
 .items-detail-container .des-details .order-time {
   font-weight: bold;
   font-size: 1.3rem;
@@ -1415,6 +1418,93 @@ table.table tbody tr td {
 .Quantity-value input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.customize-list h5 {
+  display: inline-block;
+  margin: 0;
+}
+.customize-list label {
+  font-size: 0.8rem;
+  margin: 0 0 0.25rem 0.25rem;
+  display: inline-block;
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  border-radius: 2rem;
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+  position: relative;
+}
+.customize-list label > a {
+  display: inline-block;
+  background-color: var(--footerlibg);
+  border-radius: 50%;
+  position: absolute;
+  right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  top: 0.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .desc-sidebar {
+    width: 300px;
+    max-height: 500px;
+    overflow: auto;
+  }
+}
+.desc-sidebar h4 {
+  margin-bottom: 0.5rem;
+}
+.desc-sidebar .desc-sidebarblock {
+  margin-bottom: 2rem;
+}
+.desc-sidebar .desc-sidebarblock > ul > li {
+  margin-bottom: 0.75rem;
+}
+.desc-sidebar .desc-sidebarblock > ul > li .checkbox {
+  font-size: 0.9rem;
+}
+.desc-sidebar .desc-sidebarblock > ul > li .checkbox:before {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.desc-sidebar .desc-sidebarblock > ul > li .checkbox input[type=checkbox]:checked + span:before {
+  left: 0.3rem;
+  top: 0.25rem;
+}
+.desc-sidebar .desc-sidebarblock > ul > li .checkbox span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 0.4rem;
+}
+
+.fixadent {
+  position: sticky;
+  top: 5px;
+  position: -webkit-sticky;
+}
+
+.tabs-container .tabs-list {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+.tabs-container .tabs-list > li {
+  display: inline-block;
+  position: relative;
+}
+.tabs-container .tabs-list > li > a {
+  position: relative;
+  z-index: 2;
+  top: 2px;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom: none;
+}
+.tabs-container .tabs-list > li > a.active {
+  border-color: var(--border);
+  background-color: var(--white);
 }
 
 @media screen and (max-width: 767px) {
