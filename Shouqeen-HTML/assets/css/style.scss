@@ -11,7 +11,7 @@
     --secondary: #dcaf3d;
     --lightbg: #f2f2f2;
     --cardhover:#fffbed;
-
+    --lightdesc:#777;
   }
 
 html, body{ margin: 0; padding: 0;}
@@ -569,39 +569,48 @@ input.form-control { padding: 0.6rem 1rem; border-radius: 0.3rem; background-col
 &:hover{ background-color: #dcaf3d; border-color: var(--secondary); color: var(--white);}
 }
 .list-item{
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 1rem;
+    padding: 1rem 0 0 0;
+    box-shadow: 0 1px 0 0 var(--border);
+    transition: all ease .5s;
     .list-item-content{
-        padding-top: 1rem; border-radius: 0 1rem 1rem 0 ;
+       padding-top: .5rem;
+        border-radius: 0 .5rem .5rem 0 ;
         box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0);
         transition: all ease .5s;
+        p{ color: var(--lightdesc); font-size: 90%;}
        }
-       &:hover .list-item-content{ background-color: var(--cardhover); box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);}
+       &:hover 
+       {
+        box-shadow: none;
+        .list-item-content{ background-color: var(--cardhover); box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);}
+    }
     .img-block{
         width: 100%;
-        height: 260px;
         overflow: hidden;
-        border-radius: 2rem 0 0 2rem ;
+        border-radius: .5rem 0 0 .5rem ;
        // img{ height: 100%; width: auto;}
     }
     h2{
-        font-size: 1.7rem; font-weight: bold; 
+        font-size: 1.5rem; font-weight: bold; 
     }
-    .order-time{ font-weight: bold; margin-top: .5rem;}
-    .price-list{ margin-top: 1rem; 
+    .order-time{ font-weight: bold; margin-top: .75rem;  }
+    .price-list{ margin-top: .25rem; 
      .offer-price{ font-size: 1.6rem; font-weight: bold; display: inline-block; margin-right: 1rem; color: var(--blue);}
      .actual-price{ font-size: 1.2rem; text-decoration:line-through; font-weight: 600; margin-right: 1rem; color: var(--red);}
     }
+   
     .cart-sec{
         .stars{
             display: inline-block;
         }
        // font-size: 1.3rem; 
-        .btn{ color: var(--footerbg); padding: .7rem 1.2rem;}
+        .btn{ color: var(--footerbg); padding: .5rem 1.2rem;
+        &.btn-border{
+            color: var(--lightdesc);}
+    }
         .update-items{
             span{ font-size: 2rem; display: inline-block; margin-right: 1rem; margin-left: 1rem;}
-            .btn{ font-size: 2rem; padding: .2rem 1.2rem; line-height: 1;}
+            .btn{ font-size: 2rem; padding: .2rem .7rem; line-height: 1;}
           } 
     }
 }
@@ -623,6 +632,7 @@ input.form-control { padding: 0.6rem 1rem; border-radius: 0.3rem; background-col
      .offer-price{ font-size: 1.8rem; font-weight: bold; display: inline-block; margin-right: 1rem; color: var(--blue);}
      .actual-price{ font-size: 1.2rem; text-decoration:line-through; font-weight: 600; margin-right: 1rem; color: var(--red);}
     }
+    p{ color: var(--lightdesc);}
     }
 }
 .hilight-section{ background-color: #fbeec9; padding: 1rem 0; font-size: 1.2rem; color: var(--primary);
@@ -961,7 +971,7 @@ table.table {
 }
 .desc-sidebar{
     @media screen  and (min-width: 1024px){
-        width: 300px;
+       min-width: 250px;
         max-height: 500px; 
         overflow: auto;
     }
@@ -981,6 +991,13 @@ table.table {
                 }
             }
         }
+    }
+}
+.results-page{
+    .desc-sidebar{
+        min-width:unset;
+        max-height: none;
+        overflow: unset;
     }
 }
 .fixadent{
@@ -1010,6 +1027,9 @@ table.table {
                 }
             }
         }
+    }
+    .tabdata{ display: none; padding: 1rem;
+     &.active{display: block;}
     }
 }
 
